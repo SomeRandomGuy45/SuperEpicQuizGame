@@ -6,6 +6,10 @@
     #include <iostream>
     #include <unistd.h>
     #include <windows.h>
+#elif __APPLE__
+    #include <iostream>
+    #include <unistd.h>
+    #include <stdlib.h>
 #endif
 
 using namespace std;
@@ -31,6 +35,8 @@ void MakeQuizStuff(int QNum, int Answer, string QName, string Q1, string Q2, str
                 #if defined(__linux__)
                     system("clear");
                 #elif _WIN32
+                    system("cls");
+                #elif __APPLE__
                     system("cls");
                 #endif // defined
             } else {
