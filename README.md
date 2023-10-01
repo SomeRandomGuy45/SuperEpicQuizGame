@@ -1,5 +1,7 @@
 # SuperEpicQuizGame
 
+You can add questions by using the MakeQuizStuff function!
+
 HOW TO BULID
 
 g++ source.cpp (or what ever you change the file to lol)
