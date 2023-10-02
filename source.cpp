@@ -37,7 +37,7 @@ void MakeQuizStuff(int QNum, int Answer, string QName, string Q1, string Q2, str
                 #elif _WIN32
                     system("cls");
                 #elif __APPLE__
-                    system("cls");
+                    system("clear");
                 #endif // defined
             } else {
                 cout << "WRONG ANSWER!!!!\n";
@@ -46,6 +46,8 @@ void MakeQuizStuff(int QNum, int Answer, string QName, string Q1, string Q2, str
                     system("clear");
                 #elif _WIN32
                     system("cls");
+                #elif __APPLE__
+                    system("clear");
                 #endif // defined
             }
         }
