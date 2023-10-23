@@ -15,11 +15,11 @@
 using namespace std;
 bool isGameRunning;
 
-// a simple quiz game!11!!!111!!
+// a simple quiz game
 void MakeQuizStuff(int QNum, int Answer, string QName, string Q1, string Q2, string Q3, string Q4) {
     if (isGameRunning == true) {
         if (Answer > 4) {
-            cout << "ERROR: Answer cannot be above four!";
+            cout << "Error: Answer cannot be above four!";
         } else {
             cout << "Question " << QNum << ". " << QName << endl;
             cout << "1. " << Q1 << "\t";
@@ -52,7 +52,7 @@ void MakeQuizStuff(int QNum, int Answer, string QName, string Q1, string Q2, str
             }
         }
     } else {
-        cout << "ERROR: Game is not running!";
+        cout << "Error: Game is not running!";
     }
 }
 
@@ -63,8 +63,7 @@ int main() {
         return 5;
     } else {
         isGameRunning = true;
-        MakeQuizStuff(1, 4, "HELLO WORLD", "HELLO WORLD", "HELLO WORLD", "HELLO WORLD", "HELLO WORLD");
-        MakeQuizStuff(2, 4, "HELLO WORLD", "HELLO WORLD", "HELLO WORLD", "HELLO WORLD", "HELLO WORLD");
+        MakeQuizStuff(1, 4, "life", "is", "roblox", "fr", "fr");
     }
     return 0;
 }
