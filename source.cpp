@@ -4,7 +4,6 @@
     #include <stdlib.h>
 #elif _WIN32
     #include <iostream>
-    #include <unistd.h>
     #include <windows.h>
 #elif __APPLE__
     #include <iostream>
